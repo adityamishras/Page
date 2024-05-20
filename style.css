@@ -96,6 +96,7 @@ span {
     flex-direction: column;
     overflow: hidden;
     position: fixed;
+    background: #8338ec;
   }
   .navlinks li {
     display: block;
