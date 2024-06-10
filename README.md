@@ -10,6 +10,9 @@ Hello Everyone, this a PORTFOLIO using html, Css, and Javascript.
 ```javascript
 <div><span id="element"></span></div>
 ```
+
+<video src="https://github.com/adityamishras/Page/assets/136791974/6e81b108-77ba-4402-bd24-c95946497816" autoplay/>
+
 # Javascript
 ```javascript
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -88,4 +91,14 @@ Script For Toggle Menu
 
 
 
-![Screenshot 2024-06-10 122405]()
+
+
+
+
+
+https://github.com/adityamishras/Page/assets/136791974/d9f727ec-ce24-4e7a-a06d-49ee53176fab
+
+
+
+https://github.com/adityamishras/Page/assets/136791974/3c992797-8491-4558-af8b-bc20bf71ca01
+
