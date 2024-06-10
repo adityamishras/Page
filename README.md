@@ -1,127 +1,91 @@
 # PORTFOLIO
-Hello Everyone, this a simple PORTFOLIO using html, Css, and Javascript.
+Hello Everyone, this a PORTFOLIO using html, Css, and Javascript.
 
+<img src="https://github.com/adityamishras/Page/assets/136791974/2b8c4d10-24ea-4e19-bdf8-42419fac2d73" width="1000"/>
+<img src="https://github.com/adityamishras/Page/assets/136791974/b8f55ae3-aa11-45a7-b7a8-262dc67d3837"  width="1000"/>
+
+<img src="https://github.com/adityamishras/Page/assets/136791974/f4c32881-3dac-4daf-867b-7e91a327f610"/>
+
+# Javascript
+```javascript
+<div><span id="element"></span></div>
+```
+# Javascript
+```javascript
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<b> Web Developer</b>.",
+          " <b> Content Creater. </b>",
+          " <b> Web Designer. </b>",
+          "<b> Web Developer</b>.",
+          " <b> Content Creater. </b>",
+          " <b> Web Designer. </b>",
+        ],
+        typeSpeed: 40,
+      });
+    </script>
+
+```
+<img src="https://github.com/adityamishras/Page/assets/136791974/ae242440-8d1b-425d-8e73-dd65390e6cd4"/>
+
+# Navigation Bar 
 ```html
-<body>
-    <div class="container">
-        <div class="calculator">
-            <form action="">
-                <div class="display">
-                    <input type="text" name="display">
-                </div>
-                <div>
-                    <input type="button" value="AC" onclick="display.value='' ">
-                    <input type="button" value="DE" onclick="display.value= display.value.toString().slice(0,-1)">
-                    <input type="button" value="."  onclick="display.value +='.'">
-                    <input type="button" value="/"  onclick="display.value +='/'">
-                </div>
-                <div>
-                    <input type="button" value="7" onclick="display.value +='7'">
-                    <input type="button" value="8" onclick="display.value +='8'">
-                    <input type="button" value="9" onclick="display.value +='9'">
-                    <input type="button" value="*" onclick="display.value +='*'">
-                </div>
-                <div>
-                    <input type="button" value="4" onclick="display.value +='4'">
-                    <input type="button" value="5" onclick="display.value +='5'">
-                    <input type="button" value="6" onclick="display.value +='6'">
-                    <input type="button" value="-" onclick="display.value +='-'">
-                </div>
-                <div>
-                    <input type="button" value="1" onclick="display.value +='1'">
-                    <input type="button" value="2" onclick="display.value +='2'">
-                    <input type="button" value="3" onclick="display.value +='3'">
-                    <input type="button" value="+" onclick="display.value +='+'">
-                </div>
-                <div>
-                    <input type="button" value="00" onclick="display.value +='00'">
-                    <input type="button" value="0" onclick="display.value +='0'">
-                    <input type="button" value="=" onclick="display.value=eval(display.value)" id="equalbtn">
-                </div>
-            </form>
-        </div>
+<div class="navigationbar">
+      <div class="nav">
+        <img src="images/menu.png" alt="" class="menubtn" onclick="Menubtn()" />
+        <img src="images/adilogo.png" alt="" class="logo"/>
+        <ul id="MenuItems" class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-</body>
+```
+# Javascript
+Script For Toggle Menu
+```Javascript 
+<script>
+      var Menuitems = document.getElementById("MenuItems");
+      Menuitems.style.maxHeight = "0px";
 
+      function Menubtn() {
+          if (Menuitems.style.maxHeight == "0px") {
+              Menuitems.style.maxHeight = "400px";
+          } else {
+              Menuitems.style.maxHeight = "0px";
+          }
+      }
+
+      // Function to close the menu if clicked outside
+      function closeMenu(event) {
+          if (!event.target.closest('.nav') && Menuitems.style.maxHeight == "400px") {
+              Menuitems.style.maxHeight = "0px";
+          }
+      }
+
+      // Add event listener to document for clicks
+      document.addEventListener('click', closeMenu);
+  </script>
 ```
 
-#CSS 
-```css
-* {
-  margin: 0;
-  padding: 0;
-}
-.container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.calculator {
-  background-color: rgb(63, 63, 63);
-  padding: 20px;
-}
-.display {
-  display: flex;
-  justify-content: flex-end;
-  margin: 20px 0;
-}
-
-.calculator form input {
-  border: 0;
-  outline: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  margin: 10px;
-  background-color: transparent;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.1);
-  color: white;
-}
-.calculator form #equalbtn {
-  width: 142px;
-}
-form .display input {
-  flex: 1;
-  text-align: right;
-  padding-right: 10px;
-  box-shadow: none;
-  font-size: 50px;
-}
-
-@media (max-width:375px) {
-
-  .calculator form input {
-    width: 40px;
-    height: 40px;
-    margin: 6px;
-    font-size: 15px;
-  }
-  .calculator form #equalbtn {
-    width: 100px;
-  }
-  form .display input {
-    box-shadow: none;
-    font-size: 40px;
-  }
-
-}
-
-```
 ## Screenshots
 
 ![App Screenshot](https://github.com/adityamishras/Calculator/assets/136791974/cf4de489-0705-4a22-8d42-48efb5ffca56)
 
 ## Video
-<a href="https://github.com/adityamishras/Calculator/assets/136791974/54e9506e-7800-450b-9804-58ac6c644cc7" target="_blank" controls autoplay>
+<a href="https://github.com/adityamishras/Calculator/assets/136791974/54e9506e-7800-450b-9804-58ac6c644cc7" target="_blank">
 <img src="https://github.com/adityamishras/Calculator/assets/136791974/8cb7b80c-9eea-47d9-b334-4d9a8f279786"  width="300"/>
 </a>
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://adityamishras.github.io/page/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adityamishras)
-[![instagram](https://img.shields.io/badge/instagram-1DA1F2?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/adityamishras)
+[![instagram](https://img.shields.io/badge/instagram-1DA1F2?style=for-the-badge&logo=instagram!&logoColor=white)](https://instagram.com/adityamishras)
 
+
+
+![Screenshot 2024-06-10 122405]()
