@@ -70,9 +70,6 @@ Script For Toggle Menu
 ```
 <img src="https://github.com/adityamishras/Page/assets/136791974/91c67249-1fdb-432e-968a-fc09ee3177c5"/>
 
-## Screenshots
-
-![App Screenshot](https://github.com/adityamishras/Calculator/assets/136791974/cf4de489-0705-4a22-8d42-48efb5ffca56)
 
 
 ## 🔗 Links
