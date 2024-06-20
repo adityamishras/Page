@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Mishra - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/e362ff8530.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Aditya!<img id="personal_logo"src="images/Aditya_Logo.png" alt="Aditya_Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="resume.html">Resume</a></li>
+                  <li><a class="dropdown-item" href="project.html">Project</a></li>
+                  <li><a class="dropdown-item" href="connect.html">Connect with Me</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <h3>
+                    Hello Everyone, This is Aditya Mishra a Web Developer.
+                </h3>
+              </div>
+              <div class="col">
+                <img id="developer_img" src="images/developer.jpg" alt="">
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <img src="projects/project1.png" alt="Project 1 Image"> <!-- Add your project image here -->
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn">Go Somewhere</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="projects/project2.jpg" alt="Project 2 Image"> <!-- Add your project image here -->
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn">Go Somewhere</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="projects/project3.png" alt="Project 3 Image"> <!-- Add your project image here -->
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn">Go Somewhere</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="projects/project4.png" alt="Project 4 Image"> <!-- Add your project image here -->
+                <div class="card-body">
+                    <h3>Card title</h3>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn">Go Somewhere</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-media">
+        <h2>Social Media Links</h2>
+        <div class="social-icons">
+            <a href="#"><img src="social_media_icons/instagram.webp" alt="Instagram Icon"></a> <!-- Add your social media icons here -->
+            <a href="#"><img src="social_media_icons/github.png" alt="GitHub Icon"></a> <!-- Add your social media icons here -->
+            <a href="#"><img src="social_media_icons/linkedin.webp" alt="LinkedIn Icon"></a> <!-- Add your social media icons here -->
+        </div>
+    </section>
+
+    <footer>
+      <p id="footer-text">&copy; Copyright <span id="year"></span> - adityamishra <img id="personal_logo"src="images/Aditya_Logo.png" alt="Aditya_Logo"></p>
+  </footer>
+
+  <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+      // Update the year in the footer
+      document.getElementById('year').textContent = currentYear;
+  </script>
+</body>
+</html>
