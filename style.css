@@ -310,13 +310,17 @@ form button{
     width: 90%;
   }
 }
+
+/* Resume Section */
 .resume .container .row .col-sm-4{
   height: 40vh;
   border: 1px solid black;
+  padding: 10px;
 }
 .resume .container .row .col-sm-8{
   height: 40vh;
   border: 1px solid black;
+  padding: 10px;
 }
 .resume .container .row .col-sm{
   height: 50vh;
@@ -369,6 +373,21 @@ margin: 0 10px;
     --bs-progress-height: 1.2rem;
 }
 @media (max-width:550px) {
+  .resume .container .row .col-sm-4{
+    height: 40vh;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .resume .container .row .col-sm-8{
+    height: 40vh;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .resume .container .row .col-sm{
+    height: 60vh;
+    border: 1px solid black;
+    padding: 10px;
+  }
   .resume h3 {
     font-family: "Raleway", sans-serif;
     margin-top: 10px;
