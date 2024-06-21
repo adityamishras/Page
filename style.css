@@ -375,17 +375,17 @@ margin: 0 10px;
 @media (max-width:550px) {
   .resume .container .row .col-sm-4{
     height: 40vh;
-    border: 1px solid black;
+    border: 1px solid #6c757d;
     padding: 10px;
   }
   .resume .container .row .col-sm-8{
-    height: 45vh;
-    border: 1px solid black;
+    height: fit-content;
+    border: 1px solid #6c757d;
     padding: 10px;
   }
   .resume .container .row .col-sm{
-    height: 60vh;
-    border: 1px solid black;
+    height: fit-content;
+    border: 1px solid #6c757d;
     padding: 10px;
   }
   .resume h3 {
